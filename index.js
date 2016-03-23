@@ -3,7 +3,7 @@
  */
 
 const bunyan = require('bunyan');
-const log = bunyan.createLogger({name: "removals_integration"});
+const log = bunyan.createLogger({name: "request"});
 
 module.exports = function (sails) {
   return {
