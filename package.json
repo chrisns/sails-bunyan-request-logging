@@ -10,5 +10,8 @@
     "isHook": true
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.8.0"
+  }
 }
