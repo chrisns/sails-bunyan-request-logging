@@ -1,0 +1,11 @@
+{
+  "name": "sails-bunyan-request-logging",
+  "version": "1.0.0",
+  "description": "Logs all requests (even websocket connections).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
