@@ -12,6 +12,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bunyan": "^1.8.0"
+    "bunyan": "^1.8.0",
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
   }
 }
