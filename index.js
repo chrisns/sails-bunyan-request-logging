@@ -1,7 +1,3 @@
-/**
- * Created by robin on 23/03/16.
- */
-
 const bunyan = require('bunyan');
 const sails_bunyan_log_mapping = {
   error: "error",
