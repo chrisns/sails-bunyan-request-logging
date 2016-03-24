@@ -22,7 +22,7 @@ module.exports = function (sails) {
           const headers = req.isSocket ? req.socket.handshake.headers : req.headers;
           log.info({
             method: req.method,
-            hostip: headers['x-real-ip'] || _.get(req, 'socket.handshake.address', req.ip),
+            hostip: _.get(req, 'socket.handshake.headers.x-real-ip', headers['x-real-ip']) || _.get(req, 'socket.handshake.address', req.ip),
             path: req.url,
             user: headers['x-auth-userid'],
             status: res.statusCode
