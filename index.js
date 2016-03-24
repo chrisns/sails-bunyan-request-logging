@@ -3,9 +3,21 @@
  */
 
 const bunyan = require('bunyan');
-const log = bunyan.createLogger({name: "request"});
+const sails_bunyan_log_mapping = {
+  error: "error",
+  warn: "warn",
+  debug: "debug",
+  info: "info",
+  verbose: "debug",
+  silly: "trace",
+};
 
 module.exports = function (sails) {
+  const log = bunyan.createLogger({
+    name: "request",
+    level: sails_bunyan_log_mapping[sails.config.log.level] || 'trace'
+  });
+
   return {
     routes: {
       after: {
